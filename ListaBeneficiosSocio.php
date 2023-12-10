@@ -3,9 +3,9 @@
 
 <?php 
 session_start(); //Cada vez que se quiera trabajar con sesiones en un documento hay que utilizar "session_start()".
-if (empty($_SESSION["usuario"])) { //Se esta preguntando si la sesi�n existe.
+if (empty($_SESSION["usuario"])) { //Se esta preguntando si la sesión existe.
     header("Location: Login.php");
-    exit(); //Finaliza el Script (No se lee nada mas que este abajo de esta isntrucci�n).
+    exit(); //Finaliza el Script (No se lee nada mas que este abajo de esta isntrucción).
 }
 if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) === "1") {
 ?>
@@ -20,20 +20,20 @@ if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) ===
     	<!-- NOTA: Todo lo que esta como atributo en las clases, son "Helpers" del FrameWork Bulma, osea, ejecutan funciones muy puntuales. -->
     
     	<!-- Comienzo del encabezado de la página utilizando Bulma. -->
-    	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase est� estableciendo el color (se utiliza is porque es un contenedor). -->
+    	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase está estableciendo el color (se utiliza is porque es un contenedor). -->
     		<div class="hero-body">
     			<br>
     			<div class="container"> <!-- La clase container representa que el componente puede contener otros componentes. -->
-    				<h1 class="title has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+    				<h1 class="title has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
     					Coocretal
     				</h1>
-    				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+    				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
     					Cooperativa de Ahorro y Credito
     				</h2>
     			</div>
     		</div>
     	</section>
-    	<!-- Final del encabezado de la p�gina utilizando Bulma. -->
+    	<!-- Final del encabezado de la página utilizando Bulma. -->
         <?php 
         echo "Los administradores no pueden acceder a esta pagina";
         echo "<a href='PanelAdministrador.php'> Volver al panel</a>";
@@ -53,31 +53,31 @@ if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) ===
     	<link href="vendor/fontawesome-free-6.5.0-web/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-	<!-- Comienzo del encabezado de la p�gina utilizando Bulma. -->
-	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase est� estableciendo el color (se utiliza is porque es un contenedor). -->
+	<!-- Comienzo del encabezado de la página utilizando Bulma. -->
+	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase está estableciendo el color (se utiliza is porque es un contenedor). -->
 		<div class="hero-body">
             <?php
             echo "<div style='text-align: right;'>Bienvenido Socio: " . substr($_SESSION["usuario"], 0, - 1); // Aca se toman todos los caracteres menos el ultimo.
             echo "<a href='Logout.php'> Cerrar Sesion</a></div>";
             ?>
             <div class="container"> <!-- La clase container representa que el componente puede contener otros componentes. -->
-				<h1 class="title has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+				<h1 class="title has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
 					Coocretal
 				</h1>
-				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
 					Cooperativa de Ahorro y Credito
 				</h2>
 			</div>
 		</div>
 	</section>
-	<!-- Final del encabezado de la p�gina utilizando Bulma. -->
+	<!-- Final del encabezado de la página utilizando Bulma. -->
 	<?php 
 	$categoria = new Categoria();
 	$beneficio = new Beneficio();
 	$listaCategorias = $categoria->getAll();
 	$listaBeneficios = $beneficio->getAll();
 	
-	if ($listaBeneficios){
+	if ($listaBeneficios) {
 	?>
 		<form action="ListaBeneficiosSocio.php" method="GET">
 
@@ -138,7 +138,7 @@ if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) ===
         			}
                     else {
         			    foreach ($listaBeneficios as $filaBeneficios) {
-        			        if ($filaBeneficios["estado"] == 1){
+        			        if ($filaBeneficios["estado"] == 1) {
         			            echo "<tr>";
         			            echo "<td>" . $filaBeneficios["codigo"] . "</td>";
         			            echo "<td>" . $filaBeneficios["nombre"] . "</td>";

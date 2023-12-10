@@ -13,7 +13,7 @@ class Categoria extends BDUtils{
         $sql="INSERT INTO categoria VALUES " . "('$codigo', '$nombre')"; //Se establece la sentencia SQL.
         $preparacion = $this->_db->prepare($sql); //Se prepara la sentencia SQL.
         $resultado = $preparacion->execute(); //Se ejecuta la sentencia SQL.
-        return $resultado; //Retorna un boolean si funcion� o no la sentencia SQL.
+        return $resultado; //Retorna un boolean si funcionó o no la sentencia SQL.
     }
     
     public function getAll() {
@@ -23,10 +23,10 @@ class Categoria extends BDUtils{
         
         if ($listaCategorias == true) { //Se consulta si la lista tiene datos.
             return $listaCategorias;
-            $listaCategorias->close; //Se cierra la conexi�n a la BD.
+            $listaCategorias->close; //Se cierra la conexión a la BD.
         }
         else {
-            echo "Fall� la conexi�n a la tabla"; //Si la lista esta vac�a es porque no se pudo traer los datos de la tabla.
+            echo "Falló la conexión a la tabla"; //Si la lista esta vacía es porque no se pudo traer los datos de la tabla.
         }
     }   
     
@@ -44,10 +44,10 @@ class Categoria extends BDUtils{
         
         if ($listaCategorias == true) { //Se consulta si la lista tiene datos.
             return $listaCategorias;
-            $listaCategorias->close; //Se cierra la conexi�n a la BD.
+            $listaCategorias->close; //Se cierra la conexión a la BD.
         }
         else {
-            echo "Fall� la conexi�n a la tabla"; //Si la lista esta vac�a es porque no se pudo traer los datos de la tabla.
+            echo "Falló la conexión a la tabla"; //Si la lista esta vacía es porque no se pudo traer los datos de la tabla.
         }
     }
     

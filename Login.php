@@ -9,20 +9,20 @@
 	<!-- NOTA: Todo lo que esta como atributo en las clases, son "Helpers" del FrameWork Bulma, osea, ejecutan funciones muy puntuales. -->
 
 	<!-- Comienzo del encabezado de la página utilizando Bulma. -->
-	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase est� estableciendo el color (se utiliza is porque es un contenedor). -->
+	<section class="hero is-primary"> <!-- La etiqueta section es un contenedor, el atributo de la clase está estableciendo el color (se utiliza is porque es un contenedor). -->
 		<div class="hero-body">
 			<br>
 			<div class="container"> <!-- La clase container representa que el componente puede contener otros componentes. -->
-				<h1 class="title has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+				<h1 class="title has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
 					Coocretal
 				</h1>
-				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase est� estableciendo el color (se utiliza has porque es un elemento). -->
+				<h2 class="subtitle has-text-black"> <!-- El atributo de la clase está estableciendo el color (se utiliza has porque es un elemento). -->
 					Cooperativa de Ahorro y Credito
 				</h2>
 			</div>
 		</div>
 	</section>
-	<!-- Final del encabezado de la p�gina utilizando Bulma. -->
+	<!-- Final del encabezado de la página utilizando Bulma. -->
   
 	<form action="ValidarSesion.php" method="GET">
     	<div>
