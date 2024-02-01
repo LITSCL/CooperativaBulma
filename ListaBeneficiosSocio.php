@@ -12,9 +12,10 @@ if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) ===
     <?php echo "<!doctype html>"; ?>
     <html lang="es">
     <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link href="vendor/bulma-0.8.0/css/bulma.min.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+    	<link href="vendor/bulma-0.8.0/css/bulma.min.css" rel="stylesheet">
     </head>
     <body>
     	<!-- NOTA: Todo lo que esta como atributo en las clases, son "Helpers" del FrameWork Bulma, osea, ejecutan funciones muy puntuales. -->
@@ -47,10 +48,11 @@ if (empty($_SESSION["usuario"]) == false && substr($_SESSION["usuario"], -1) ===
 <!doctype html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-		<link href="vendor/bulma-0.8.0/css/bulma.min.css" rel="stylesheet">
-    	<link href="vendor/fontawesome-free-6.5.0-web/css/all.min.css" rel="stylesheet">
+	<link href="vendor/bulma-0.8.0/css/bulma.min.css" rel="stylesheet">
+	<link href="vendor/fontawesome-free-6.5.0-web/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 	<!-- Comienzo del encabezado de la página utilizando Bulma. -->
